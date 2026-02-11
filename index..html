@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Arşivi ve Tanıtım Portalı</title>
+    <style>
+      
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        body {
+            background: linear-gradient(to right, #2c3e50, #4ca1af); 
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .ana-header {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        
+        .kategori-ozet {
+            list-style: none;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .kategori-ozet li {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .korku-liste::before { content: "👻 "; }
+        .aksiyon-liste::before { content: "💥 "; }
+        .drama-liste::before { content: "🎭 "; }
+
+       
+        .film-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+       
+        .film-div {
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            color: white;
+        }
+        
+
+        .korku-kart { background-color: #1a1a1a; border-top: 5px solid blue; }
+        .aksiyon-kart { background-color: #784212; border-top: 5px solid brown; }
+        .drama-kart { background-color: #9a7d0a; border-top: 5px solid gold; }
+
+       
+        .film-div header h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        
+        .film-div p {
+            height: 130px; 
+            overflow-y: scroll; 
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        
+        .korku-kart p { font-family: 'Courier New', monospace; font-size: 13px; color: #ecf0f1; }
+        .aksiyon-kart p { font-family: 'Arial Black', sans-serif; font-size: 12px; text-align: justify; }
+        .drama-kart p { font-family: 'Georgia', serif; font-style: italic; font-size: 14px; }
+
+       
+        .film-div a {
+            display: inline-block;
+            background: #fff;
+            color: #333;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .film-div a:hover { transform: scale(1.05); background: #eee; }
+
+        
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <header class="ana-header">
+        <h1>🎬 SİNEMA-PORTAL FİLM ARŞİVİ</h1>
+    </header>
+
+    <ul class="kategori-ozet">
+        <li class="korku-liste">Korku: Scream, Midsommar, The Profane Exhibit, Beneath the Old Dark House</li>
+        <li class="aksiyon-liste">Aksiyon: John Wick 4, Samaritan, Kayıp Şehir, Hızlı ve Öfkeli</li>
+        <li class="drama-liste">Drama: Birutiful, Blue Valentine, A Separation, The Road</li>
+    </ul>
+
+    <main class="film-container">
+
+        <div class="film-div korku-kart">
+            <header><h2>The Profane Exhibit</h2></header>
+            <p>Bir korku antolojisi olarak dikkat çekiyor ve farklı yönetmenlerce çekilen on üç kısa korku filmini bir araya getiriyor. Her hikaye farklı bir dehşet unsurunu ele alarak izleyiciyi karanlık bir yolculuğa çıkarıyor. Yönetmenlerin kendine has tarzları filmi oldukça çeşitli kılıyor. Korku sinemasının sınırlarını zorlayan bu yapım, gerilim sevenler için ideal bir tercih. Görsel efektleri ve atmosferiyle iz bırakan bir seri.</p>
+            <a href="https://www.sinemalar.com/film/191887/korku-sergisi" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div korku-kart">
+            <header><h2>Scream</h2></header>
+            <p>25 yıl önce Woodsboro kasabasında başlayan acımasız cinayetlerin ardından, yeni bir katil Ghostface maskesini takar. Kasabanın karanlık geçmişini diriltmek için genç bir grup genci hedef alıyor. Eski dostlar ve yeni kurbanlar arasında nefes kesen bir kovalamaca başlıyor. Maskenin ardındaki gizemli katil her adımda daha da yaklaşıyor. Gerilim ve korkunun klasikleşmiş bu serisi izleyiciyi şaşırtmaya devam ediyor.</p>
+            <a href="https://www.filmiizle.co/tr/ciglik-izle" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div korku-kart">
+            <header><h2>Midsommar</h2></header>
+            <p>Dani ve Christian, arkadaşları Pelle'nin davetiyle İsveç'te düzenlenen geleneksel yaz bayramına katılır. Ancak bu ritüel, insan kurban etme ritüeli olarak bilinir ve beklenmedik olaylarla doludur. Film, bu ritüelin içsel çatışmalar ve korku dolu deneyimlerle nasıl etkileriyle dolu olduğunu anlatır.</p>
+            <a href="https://yabancidizi.so/film/midsommar" target="_blank">Film İzle</a>
+        </div>
+
+       <div class="film-div korku-kart">
+            <header><h2> Beneath the Old Dark House</h2></header>
+            <p>Beneath the Old Dark House, orijinal adı Beneath the Old Dark House, 2022 yapımı bir film. Film, Waverton çifti ve arkadaşları Philip, Rebecca Femm ve Horace tarafından yönetilen eski bir konağa sığınma hikayesini konu alıyor. Gecenin ilerleyen saatlerinde, onlar gibi konağa sığınan başkaları da olur ve misafirler, ev sahiplerinin tuhaf davranışlarına şahit olur. Çok geçmeden konuklar, evin korkunç sırlara sahip olduğunu keşfeder.</p>
+            <a href="https://ugurfilm3.xyz/the-old-dark-house/" target="_blank">Film İzle</a>
+       </div> 
+
+       <div class="film-div aksiyon-kart">
+            <header><h2>Samaritan</h2></header>
+            <p>Samaritan, yirmi yıl önce yapılan bir savaşın ardından yok olduğu düşünülen bir süper kahramanın aslında var olduğunu öğrenen bir gencin hikayesini konu ediyor. On üç yaşındaki Sam Cleary, münzevi komşusu Bay Smith'in aslında 20 yıl önce öldüğü söylenen efsanevi kanunsuz Samaritan olduğundan şüphelenir. Suçun artması ve şehrin kaosun eşiğine gelmesiyle Sam, şehri yıkımdan kurtarmak için komşusunu saklandığı yerden çıkarmaya ikna etmeyi kendine görev edinir.</p>
+            <a href="https://filminifullhdizle.com/kahramanin-donusu-2022-izle/" target="_blank">Film İzle</a>
+       </div>
+
+        <div class="film-div aksiyon-kart">
+            <header><h2>John Wick 4</h2></header>
+            <p>2023 yapımı bir Amerikan aksiyon filmidir. Film, John Wick'in özgürlüğünü kazanmak için Yüksek Şura'ya karşı savaşını sürdürmesini konu alır. John Wick, yeni düşmanlarla yüzleşirken dostluklar ve kanlı hesaplaşmalarla dolu bir yolculukta bulunur. Paris sokaklarından Tokyo'ya kadar uzanan dev bir aksiyon şöleni sunar. Her sahnesi profesyonel koreografilerle hazırlanmış bir başyapıttır.</p>
+            <a href="https://www.justwatch.com/tr/film/john-wick-chapter-4" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div aksiyon-kart">
+            <header><h2>Kayıp Şehir</h2></header>
+            <p>Loretta Sage, popüler aşk-macera romanlarında egzotik yerler hakkında yazarken, antik kayıp şehrin hazinesine götürebileceğini uman bir eksantrik milyarder tarafından kaçırılır. Alan, Loretta'nın kendisini kitaplarda geçen antik şehrin hazinesine götürebileceğini düşünmektedir. Alan, Loretta'yı kurtarmak için yola koyulur ve bu sırada kendilerini bir orman macerasında bulur. Kayıp Şehir’de hayatta kalmak ve antik hazineyi bulmak için birlikte çalışması gerekmektedir. </p>
+            <a href="https://www.filmizyon.com/film/kayip-sehir-2022-turkce-dublaj-izle/" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div aksiyon-kart">
+            <header><h2>Hızlı ve Öfkeli</h2></header>
+            <p>Hızlı ve Öfkeli film serisi, Dominic Toretto'nun Los Angeles sokaklarında yasa dışı yarışlara katılmasıyla başlar. Serinin ana karakterleri arasında Brian O'Conner ve Roman Pearce yer almaktadır. Dominic'in ailesini koruma çabası ve suç dünyasıyla mücadelesi ana temadır. Rio'dan Abu Dabi'ye kadar uzanan aksiyon dolu bir macera serisidir. Arabalar, hız ve sadakat üzerine kurulmuş efsanevi bir serüvendir.</p>
+            <a href="https://www.filmizyon.com/film/hizli-ve-ofkeli-1-turkce-dublaj-izle/" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div drama-kart">
+            <header><h2>Birutiful</h2></header>
+            <p>Biutiful, Javier Bardem'in canlandırdığı Uxbal karakterinin hikayesini anlatan bir filmdir. Uxbal, Barcelona'nın tehlikeli yer altı dünyasında yaşam mücadelesi vermektedir. Suçu, pişmanlığı ve ölümlülüğü dengelemeye çalışan bir babanın yaşamını ele alır. Çocukları için yaptığı fedakarlıklarda hiçbir sınır tanımaz. İnsan ruhunun derinliklerine inen bu dram, izleyiciyi derinden etkileyen sahneler içerir.</p>
+            <a href="https://sinemanova.com/biutiful/" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div drama-kart">
+            <header><h2>Blue Valentine</h2></header>
+            <p>"Blue Valentine", Derek Cianfrance'ın yazıp yönettiği 2010 yapımı romantik dram filmidir. Başrollerinde Ryan Gosling ve Michelle Williams yer almaktadır. Film, boşanmanın eşiğine gelen evli bir çiftin bozulan evliliklerini ve ilişkilerini gözden geçirmelerini konu almaktadır. Dean ve Cindy'nin evliliği, gençlik yıllarında tanıştıkları ve evlenme kararı aldıkları dönemlerden kesin olarak yansıtılmaktadır. Film, aile yaşam döngüsü kavramını işler ve karakterlerin bağımsızlık, eş seçimi, evlilik, ebeveyn olma, yetişkin çocuklara sahip ebeveyn olma, emeklilik ve yaşlılık gibi evrelerden geçişlerini gösterir.</p>
+            <a href="https://www.justwatch.com/tr/film/ask-ve-kuller" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div drama-kart">
+            <header><h2>A Separation</h2></header>
+            <p>"Bir Ayrılık" filmi, boşanmış bir orta sınıf İranlı çifti ile yaşlı babası için alt sınıf bir bakıcı tutmasını izleyen entrikaları konu edinmektedir. Nadir ve Simin, 11 yaşındaki kızları Terme ile birlikte Tahran'da yaşamaktadırlar. Simin, kızı Terme'nin İran'daki mevcut şartlar altında büyümesini istemediği için kocası ve kızıyla birlikte ülkeyi terk etmek ister. Ancak Nadir'in aileyle yaşayan ve Alzheimer hastası olan babası için endişelenmesi, bu kararını değiştirir. Nadir'in İran'da kalmaya karar vermesi, Simin'in boşanma davası açmasına sebep olur. Mahkeme ise çiftin sorunlarını boşanmaya sebep olacak nitelikte görmez ve Simin'in başvurusunu reddeder. Bunun üzerine Simin kocası ve kızından ayrılarak ebeveynlerinin yanına taşınır.</p>
+            <a href="https://www.justwatch.com/tr/film/bir-ayrilik" target="_blank">Film İzle</a>
+        </div>
+
+        <div class="film-div drama-kart">
+            <header><h2>The Road</h2></header>
+            <p>Kıyamet sonrası bir dünyada, bir baba ve oğlunun hayatta kalma mücadelesini anlatan bu eser, insanlığın sınırlarını sorgular. Felaketler sonucunda bitkilerin yok olduğu bir evrende güneye doğru yol alırlar. İnsanlık dışı bir dünyada sevgiye ve umuda tutunmaya çalışırlar. The Road, insanın kendi yıkımına tanıklık ettiği bir atmosfer sunar. Umutsuzluk ile umut arasındaki o ince gerilimi başarıyla yansıtır.</p>
+            <a href="https://ugurfilm3.xyz/the-road/" target="_blank">Film İzle</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
